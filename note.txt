@@ -3,7 +3,7 @@ docker run -p 3000:3000 -v /app/node_modules -v ${PWD}:/app  1f69f5230ba4
 
 docker run -p 3000:3000  14b3370b90a7
 
-docker run -it ab18d9e8bfa1 npm run test
+docker run -it ab18d9e8bfa1 npm run test -- --coverage
 
 docker-compose up --build
 docker-compose up -d #run your services in the background
